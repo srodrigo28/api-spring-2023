@@ -21,3 +21,15 @@ https://www.youtube.com/watch?v=ATjHgBh8dWg&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 ```
 http://localhost:8080/h2-console
 ```
+
+```
+http://localhost:8080/api/condominio
+```
+
+```
+http://localhost:8080/api/membro
+```
+
+```
+http://localhost:8080/api/produto
+```

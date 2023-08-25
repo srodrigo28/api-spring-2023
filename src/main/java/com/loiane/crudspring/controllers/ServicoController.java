@@ -7,21 +7,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.loiane.crudspring.models.Produto;
-import com.loiane.crudspring.repository.ProdutoRepository;
+import com.loiane.crudspring.models.Servico;
+import com.loiane.crudspring.repository.ServicoRepository;
 
 import lombok.AllArgsConstructor;
 
 @Component
 @RestController
 @AllArgsConstructor
-@RequestMapping("/api/produto")
-public class ProdutoController {
-    
-    private final ProdutoRepository produtoRepository;
+@RequestMapping("/api/servico")
+public class ServicoController {
 
+    private final ServicoRepository servicoRepository;
+
+    // @RequestMapping(method = RequestMethod.GET)
     @GetMapping
-    public List<Produto> list(){
-        return produtoRepository.findAll();
+    public List<Servico> list(){
+        return servicoRepository.findAll();
     }
 }
