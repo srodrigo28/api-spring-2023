@@ -11,7 +11,7 @@ import com.loiane.crudspring.repository.CourseRepository;
 import com.loiane.crudspring.repository.ProdutoRepository;
 
 @SpringBootApplication
-public class CrudSpringApplication {
+public class CrudSpringApplicationBackup {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CrudSpringApplication.class, args);
@@ -42,17 +42,17 @@ public class CrudSpringApplication {
 
 			produto1.setNome("Notebook Lenovo");
 			produto1.setDescricao("Core i3, 16GB ram, SSD 512GB");
-			produto1.setQuantidade(10);
+			produto1.setQuantidade(2);
 			produto1.setValor(3700);
 
 			produto2.setNome("Notebook Dell");
 			produto2.setDescricao("Core i5, 16GB ram, SSD 512GB");
-			produto2.setQuantidade(15);
+			produto2.setQuantidade(2);
 			produto2.setValor(4700);
 
 			produto3.setNome("Computador Gamer Dell");
 			produto3.setDescricao("Core i7, 16GB ram, SSD 512GB");
-			produto3.setQuantidade(18);
+			produto3.setQuantidade(2);
 			produto3.setValor(6000);
 
 			produtoRepository.save(produto1);
