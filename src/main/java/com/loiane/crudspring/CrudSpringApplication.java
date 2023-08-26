@@ -92,7 +92,7 @@ public class CrudSpringApplication {
 	@Bean // Condominio
 	CommandLineRunner initDatabase4(CondominioRepository condominioRepository){
 		return args -> {
-			condominioRepository.deleteAll();
+			// condominioRepository.deleteAll();
 
 			Condominio cond1 = new Condominio();
 			Condominio cond2 = new Condominio();
