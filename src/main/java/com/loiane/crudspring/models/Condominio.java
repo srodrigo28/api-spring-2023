@@ -34,5 +34,5 @@ public class Condominio {
     private String data_inicio;
     
     @Column(nullable = false)
-    private String valor_contrato;
+    private Float valor_contrato;
 }

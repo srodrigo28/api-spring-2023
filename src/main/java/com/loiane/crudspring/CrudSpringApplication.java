@@ -104,7 +104,7 @@ public class CrudSpringApplication {
 			cond1.setBairro("Setor Oeste");
 			cond1.setEndereco("Av. T-9, N 1026,");
 			cond1.setData_inicio("20-02-2023");
-			cond1.setValor_contrato("2000");
+			cond1.setValor_contrato(2000f);
 
 			cond2.setNome("Jardim Europa");
 			cond2.setCnpj("00.394.460/0058-99");
@@ -112,7 +112,7 @@ public class CrudSpringApplication {
 			cond2.setBairro("Setor Oeste");
 			cond2.setEndereco("Av. T-4, N 3026,");
 			cond2.setData_inicio("20-02-2022");
-			cond2.setValor_contrato("3000");
+			cond2.setValor_contrato(3000f);
 
 			cond3.setNome("Nascer do Sol");
 			cond3.setCnpj("00.394.460/0058-00");
@@ -120,7 +120,7 @@ public class CrudSpringApplication {
 			cond3.setBairro("Marista");
 			cond3.setEndereco("Av. T-7, N 1026,");
 			cond3.setData_inicio("20-10-2023");
-			cond3.setValor_contrato("2500");
+			cond3.setValor_contrato(2700f);
 
 			condominioRepository.save(cond1);
 			condominioRepository.save(cond2);
