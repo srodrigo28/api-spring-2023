@@ -15,24 +15,24 @@ public class Condominio {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(length = 50, nullable = false)
+    @Column(length = 100, nullable = false)
     private String nome;
 
-    @Column(length = 20, nullable = false)
+    @Column(length = 100, nullable = false)
     private String cnpj;
 
-    @Column(length = 30, nullable = false)
+    @Column(length = 100, nullable = false)
     private String cidade;
 
-    @Column(length = 30, nullable = false)
+    @Column(length = 100, nullable = false)
     private String bairro;
 
-    @Column(length = 30, nullable = false)
+    @Column(length = 100, nullable = false)
     private String endereco;
 
-    @Column(length = 20, nullable = false)
+    @Column(length = 100, nullable = false)
     private String data_inicio;
     
     @Column(nullable = false)
-    private Float valor_contrato;
+    private String valor_contrato;
 }
