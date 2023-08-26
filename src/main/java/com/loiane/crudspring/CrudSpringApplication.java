@@ -24,7 +24,7 @@ public class CrudSpringApplication {
 	@Bean // Cursos
 	CommandLineRunner initDatabase(CourseRepository courseRepository) {
 		return args -> {
-			courseRepository.deleteAll();
+			// courseRepository.deleteAll();
 
 			Course cursos1 = new Course();
 
@@ -38,7 +38,7 @@ public class CrudSpringApplication {
 	@Bean // Produtos
 	CommandLineRunner initDatabase2(ProdutoRepository produtoRepository) {
 		return args -> {
-			produtoRepository.deleteAll();
+			// produtoRepository.deleteAll();
 
 			Produto produto1 = new Produto();
 			Produto produto2 = new Produto();
@@ -68,7 +68,7 @@ public class CrudSpringApplication {
 	@Bean // Membros
 	CommandLineRunner initDatabase3(MembroRepository membroRepository) {
 		return args -> {
-			membroRepository.deleteAll();
+			// membroRepository.deleteAll();
 
 			Membro m1 = new Membro();
 			Membro m2 = new Membro();

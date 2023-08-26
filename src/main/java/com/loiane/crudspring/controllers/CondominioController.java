@@ -24,12 +24,18 @@ public class CondominioController {
 
     private final CondominioRepository condominioRepository;
 
+    /** Methodo Get
+     * Listando Todos os Condominios
+     */
     // @RequestMapping(method = RequestMethod.GET)
     @GetMapping
     public List<Condominio> list() {
         return condominioRepository.findAll();
     }
 
+    /** Methodo Post
+     * Adicionando Condominio Via Post
+     **/
     @PostMapping
     @ResponseStatus(code = HttpStatus.CREATED)
     public Condominio create(@RequestBody Condominio c){
